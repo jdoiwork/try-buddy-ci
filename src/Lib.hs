@@ -1,6 +1,7 @@
 module Lib
-    ( someFunc
+    ( fib
     ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+fib :: Int -> Int
+fib _ = 0
+
