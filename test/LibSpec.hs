@@ -5,7 +5,7 @@ import Lib
 
 spec :: Spec
 spec = do
-  describe "#fib" $ do
+  describe "fib :: Int -> Int" $ do
     context "fib 0" $ do
       it "should be 0" $ do
         fib 0 `shouldBe` 0
