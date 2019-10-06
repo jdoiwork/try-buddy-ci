@@ -19,7 +19,7 @@ spec = do
       it "should be 1" $ do
         fib 2 `shouldBe` 1
 
-    context "fib x | 3 <= x <= 10000" $ do
+    context "fib x | 3 <= x <= 100" $ do
       it "should be (fib x-1) (fib x-2)" $ property $
         forAll (choose (3, 100)) $
           \x -> fib x `shouldBe` (fib $ x-1) + (fib $ x-2)
