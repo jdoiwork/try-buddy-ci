@@ -47,3 +47,4 @@ tests:
     dependencies:
     - try-buddy-ci
     - hspec
+    - QuickCheck
