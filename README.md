@@ -3,3 +3,7 @@
 # try-buddy-ci
 
 https://buddy.works/ でCIするためのお試しリポジトリ
+
+# ドキュメント
+
+[HaskellとHspecでBuddy CI](https://qiita.com/jdoiWork/items/1cc09a1d375a038ac400)
