@@ -6,12 +6,16 @@ services:
     - .:/code
     working_dir: /code
     command: ["bash"]
-  # web:
-  #   build: .
-  #   ports:
-  #   - "5000:5000"
-  #   volumes:
-  #   - .:/code
+
+  web:
+    image: fpco/stack-build-small
+    #   build: .
+    ports:
+    - "5000:5000"
+    volumes:
+    - .:/code
+    working_dir: /code
+    command: ["/bin/bash", "./bin/run.sh"]
   #   - logvolume01:/var/log
   #   links:
   #   - redis
