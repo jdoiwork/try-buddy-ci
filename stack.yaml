@@ -66,3 +66,4 @@ packages:
 # compiler-check: newer-minor
 
 allow-different-user: true
+local-bin-path: "./dist"

@@ -16,6 +16,8 @@ services:
     - .:/code
     working_dir: /code
     command: ["/bin/bash", "./bin/run.sh"]
+    environment:
+    - PORT:5000
   #   - logvolume01:/var/log
   #   links:
   #   - redis
