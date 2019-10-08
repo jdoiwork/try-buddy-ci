@@ -1,0 +1,21 @@
+version: '3'
+services:
+  develop:
+    image: fpco/stack-build-small
+    volumes:
+    - .:/code
+    working_dir: /code
+    command: ["bash"]
+  # web:
+  #   build: .
+  #   ports:
+  #   - "5000:5000"
+  #   volumes:
+  #   - .:/code
+  #   - logvolume01:/var/log
+  #   links:
+  #   - redis
+  # redis:
+  #   image: redis
+# volumes:
+  # logvolume01: {}
