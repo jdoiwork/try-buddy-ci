@@ -1,6 +1,7 @@
 module Main where
 
 import Lib
+import WebApp
 
 main :: IO ()
-main = print "Hello Main"
+main = app
